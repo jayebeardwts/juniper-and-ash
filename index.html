@@ -1,15 +1,251 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Juniper & Ash Coffee Co.</title><meta name="description" content="Fictional Los Angeles coffee brand portfolio concept."><link rel="stylesheet" href="styles.css"></head><body>
-<header><a class="logo" href="#home"><span>↟</span><b>JUNIPER & ASH<small>COFFEE CO.</small></b></a><button id="menu">☰</button><nav id="nav"><a href="#home">Home</a><a href="#story">About</a><a href="#coffee">Menu</a><a href="#shop">Shop</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section class="hero" id="home"><div class="heroCopy"><h1>Good Coffee<br>Brighter Days</h1><p>A neighborhood coffee shop in Los Angeles serving thoughtfully sourced coffee, seasonal flavors and a welcoming space for our community.</p><div><a class="button" href="#coffee">VIEW MENU</a><a class="button outline" href="#story">OUR STORY</a></div></div></section>
-<section class="story" id="story"><img src="storefront.jpg" alt="Juniper & Ash storefront concept"><div><p class="kicker">OUR STORY</p><h2>Rooted in Community</h2><p>Juniper & Ash Coffee Co. was born from a love of great coffee and the belief that neighborhood spaces can bring people together. We source thoughtfully, highlight local makers and aim to create a welcoming place for everyone in our community.</p><a class="button" href="#visit">LEARN MORE</a></div><div class="values"><div>♧<small>SUSTAINABLY<br>SOURCED</small></div><div>♡<small>LOCALLY<br>ROASTED</small></div><div>♧<small>COMMUNITY<br>FOCUSED</small></div><div>♧<small>GOOD COFFEE<br>BRIGHTER DAYS</small></div></div></section>
-<section class="menu" id="coffee"><p class="kicker">OUR MENU</p><h2>Favorites for Every Day</h2><p>Seasonal ingredients, classic drinks and a few special creations.</p><div class="cards">
-<article><img src="vanilla.jpg" alt="Vanilla oat latte"><b>Vanilla Oat Latte</b><small>espresso, oat milk, vanilla</small><strong>$5.50</strong></article>
-<article><img src="matcha.jpg" alt="Matcha latte"><b>Matcha Latte</b><small>organic matcha, your choice of milk</small><strong>$5.75</strong></article>
-<article><img src="coldbrew.jpg" alt="Cold brew"><b>Cold Brew</b><small>smooth, bold and refreshing</small><strong>$5.50</strong></article>
-<article><img src="seasonal.jpg" alt="Seasonal latte"><b>Seasonal Latte</b><small>rotating flavors inspired by the season</small><strong>$5.75</strong></article>
-</div></section>
-<section class="shop" id="shop"><div><p class="kicker">BRING US HOME</p><h2>Coffee Beans<br>& Merch</h2><p>Our signature blends, seasonal roasts and Juniper & Ash merch are available online and in the shop.</p><button class="button demo">SHOP NOW</button></div><img src="coffee-bag.jpg" alt="Juniper & Ash coffee bag concept"><blockquote>“My favorite coffee shop in LA. Great coffee, kind people and a beautiful space to work or just be.”<small>★★★★★ — TAYLOR M.</small></blockquote></section>
-<section class="visit" id="visit"><img src="interior.jpg" alt="Warm Juniper & Ash café interior"><div><h2>Visit Us</h2><p>⌖ &nbsp;1234 Sunset Blvd.<br>&nbsp;&nbsp;&nbsp;&nbsp;Los Angeles, CA 90026</p><p>◷ &nbsp;Mon – Fri &nbsp;&nbsp;7am – 6pm<br>&nbsp;&nbsp;&nbsp;&nbsp;Sat – Sun &nbsp;&nbsp;8am – 6pm</p><button class="button outline demo">GET DIRECTIONS</button></div><aside>GOOD PEOPLE<br>+<br>GOOD COFFEE<br>BRIGHTER DAYS</aside></section>
-<section class="contact" id="contact"><p class="kicker">STAY IN THE LOOP</p><h2>Join Our Community</h2><p>Get updates on seasonal drinks, events and new releases.</p><form id="form"><input type="email" aria-label="Email address" placeholder="Your email address" required><button class="button">SUBSCRIBE</button></form><p id="msg"></p><small>This is a fictional business created for portfolio purposes.</small></section>
-</main><footer><b>JUNIPER & ASH</b><span>Los Angeles · Good Coffee · Brighter Days</span><span>© <i id="year"></i> Juniper & Ash Coffee Co.</span></footer><div id="toast"></div><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Juniper & Ash Coffee Co. | Web Design Portfolio Project</title>
+  <meta
+    name="description"
+    content="A responsive Los Angeles coffee shop website concept designed and developed by Jaye Beard."
+  >
+  <meta property="og:title" content="Juniper & Ash Coffee Co.">
+  <meta
+    property="og:description"
+    content="Responsive coffee shop website concept designed and developed by Jaye Beard."
+  >
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#17301f">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Juniper and Ash Coffee Co. home">
+      <span aria-hidden="true">↟</span>
+      <b>
+        JUNIPER &amp; ASH
+        <small>COFFEE CO.</small>
+      </b>
+    </a>
+
+    <button
+      id="menu"
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-controls="nav"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#story">About</a>
+      <a href="#coffee">Menu</a>
+      <a href="#shop">Shop</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="heroCopy">
+        <p class="hero-kicker">LOS ANGELES · NEIGHBORHOOD COFFEE</p>
+        <h1>Good Coffee<br>Brighter Days</h1>
+        <p>
+          A neighborhood coffee shop in Los Angeles serving thoughtfully sourced
+          coffee, seasonal flavors and a welcoming space for our community.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#coffee">VIEW MENU</a>
+          <a class="button outline" href="#story">OUR STORY</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <img
+        src="storefront.jpg"
+        alt="Juniper and Ash storefront concept"
+        loading="lazy"
+      >
+
+      <div class="story-copy">
+        <p class="kicker">OUR STORY</p>
+        <h2>Rooted in Community</h2>
+        <p>
+          Juniper &amp; Ash Coffee Co. was born from a love of great coffee and
+          the belief that neighborhood spaces can bring people together. We
+          source thoughtfully, highlight local makers and aim to create a
+          welcoming place for everyone in our community.
+        </p>
+        <a class="button" href="#visit">LEARN MORE</a>
+      </div>
+
+      <div class="values" aria-label="Juniper and Ash values">
+        <div>
+          <span aria-hidden="true">♧</span>
+          <small>SUSTAINABLY<br>SOURCED</small>
+        </div>
+        <div>
+          <span aria-hidden="true">♡</span>
+          <small>LOCALLY<br>ROASTED</small>
+        </div>
+        <div>
+          <span aria-hidden="true">♧</span>
+          <small>COMMUNITY<br>FOCUSED</small>
+        </div>
+        <div>
+          <span aria-hidden="true">♧</span>
+          <small>GOOD COFFEE<br>BRIGHTER DAYS</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="coffee">
+      <div class="section-intro">
+        <p class="kicker">OUR MENU</p>
+        <h2>Favorites for Every Day</h2>
+        <p>Seasonal ingredients, classic drinks and a few special creations.</p>
+      </div>
+
+      <div class="cards">
+        <article>
+          <img src="vanilla.jpg" alt="Vanilla oat latte" loading="lazy">
+          <div class="card-copy">
+            <b>Vanilla Oat Latte</b>
+            <small>espresso, oat milk, vanilla</small>
+            <strong>$5.50</strong>
+          </div>
+        </article>
+
+        <article>
+          <img src="matcha.jpg" alt="Matcha latte" loading="lazy">
+          <div class="card-copy">
+            <b>Matcha Latte</b>
+            <small>organic matcha, your choice of milk</small>
+            <strong>$5.75</strong>
+          </div>
+        </article>
+
+        <article>
+          <img src="coldbrew.jpg" alt="Cold brew" loading="lazy">
+          <div class="card-copy">
+            <b>Cold Brew</b>
+            <small>smooth, bold and refreshing</small>
+            <strong>$5.50</strong>
+          </div>
+        </article>
+
+        <article>
+          <img src="seasonal.jpg" alt="Seasonal latte" loading="lazy">
+          <div class="card-copy">
+            <b>Seasonal Latte</b>
+            <small>rotating flavors inspired by the season</small>
+            <strong>$5.75</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="shop-copy">
+        <p class="kicker">BRING US HOME</p>
+        <h2>Coffee Beans<br>&amp; Merch</h2>
+        <p>
+          Our signature blends, seasonal roasts and Juniper &amp; Ash merch are
+          available online and in the shop.
+        </p>
+        <button class="button demo" type="button">SHOP NOW</button>
+      </div>
+
+      <img
+        src="coffee-bag.jpg"
+        alt="Juniper and Ash coffee bag concept"
+        loading="lazy"
+      >
+
+      <blockquote>
+        “My favorite coffee shop in LA. Great coffee, kind people and a beautiful
+        space to work or just be.”
+        <small>★★★★★ — TAYLOR M.</small>
+      </blockquote>
+    </section>
+
+    <section class="visit" id="visit">
+      <img
+        src="interior.jpg"
+        alt="Warm Juniper and Ash café interior"
+        loading="lazy"
+      >
+
+      <div class="visit-copy">
+        <p class="kicker light">COME SAY HELLO</p>
+        <h2>Visit Us</h2>
+
+        <p class="visit-detail">
+          <span aria-hidden="true">⌖</span>
+          <span>1234 Sunset Blvd.<br>Los Angeles, CA 90026</span>
+        </p>
+
+        <p class="visit-detail">
+          <span aria-hidden="true">◷</span>
+          <span>
+            Mon – Fri&nbsp;&nbsp; 7am – 6pm<br>
+            Sat – Sun&nbsp;&nbsp; 8am – 6pm
+          </span>
+        </p>
+
+        <button class="button outline demo" type="button">GET DIRECTIONS</button>
+      </div>
+
+      <aside>
+        <span>GOOD PEOPLE</span>
+        <span>+</span>
+        <span>GOOD COFFEE</span>
+        <span>BRIGHTER DAYS</span>
+      </aside>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <p class="kicker">STAY IN THE LOOP</p>
+        <h2>Join Our Community</h2>
+        <p>Get updates on seasonal drinks, events and new releases.</p>
+
+        <form id="form">
+          <label class="sr-only" for="email">Email address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          >
+          <button class="button" type="submit">SUBSCRIBE</button>
+        </form>
+
+        <p id="msg" aria-live="polite"></p>
+        <small>
+          Juniper &amp; Ash is a fictional brand concept designed and developed by
+          Jaye Beard.
+        </small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <b>JUNIPER &amp; ASH</b>
+    <span>Concept website designed &amp; developed by Jaye Beard</span>
+    <span>© <i id="year"></i> Portfolio Project</span>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
