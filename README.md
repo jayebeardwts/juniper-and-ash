@@ -1,10 +1,20 @@
-# Juniper & Ash Coffee Co. — Complete v4
+# Juniper & Ash v5 — Flat GitHub Pages Build
 
-Fictional small-business portfolio website.
+This build is specifically simplified for uploading from a phone.
 
-## GitHub Pages
-Upload `index.html`, `styles.css`, `script.js`, and the entire `assets` folder to the repository root. Keep the folder name `assets` unchanged.
+Upload ALL files directly to the repository root. Do not create an assets folder.
 
-This version uses individual local image assets. It does **not** embed full-page design-reference screenshots.
+Required files:
+- index.html
+- styles.css
+- script.js
+- hero.jpg
+- storefront.jpg
+- vanilla.jpg
+- matcha.jpg
+- coldbrew.jpg
+- seasonal.jpg
+- coffee-bag.jpg
+- interior.jpg
 
-All business details and testimonials are fictional portfolio content.
+GitHub filenames are case-sensitive. Keep these filenames exactly as written.
