@@ -36,3 +36,385 @@ img{display:block;max-width:100%}
   .contact form{width:100%;max-width:430px}
   footer{width:100%;padding:28px 18px}
 }
+/* =========================
+   Portfolio polish
+   ========================= */
+
+:root{
+  --cream:#f4f0e6;
+  --cream-light:#f7f3e9;
+  --ink:#171a15;
+  --green:#17301f;
+  --rust:#a95324;
+  --sand:#cfb07c;
+  --border:rgba(23,26,21,.14);
+}
+
+/* Better overall rhythm */
+body{
+  font-size:16px;
+  line-height:1.6;
+}
+
+section{
+  scroll-margin-top:72px;
+}
+
+p{
+  max-width:62ch;
+}
+
+/* Header */
+header{
+  min-height:76px;
+  height:auto;
+  border-bottom:1px solid rgba(23,26,21,.08);
+  backdrop-filter:blur(8px);
+}
+
+.logo{
+  gap:10px;
+}
+
+.logo b{
+  font-size:13px;
+  line-height:1.15;
+}
+
+.logo small{
+  letter-spacing:.14em;
+}
+
+nav a{
+  position:relative;
+  padding:8px 0;
+  transition:opacity .2s ease;
+}
+
+nav a:hover{
+  opacity:.6;
+}
+
+/* Hero */
+.hero{
+  min-height:640px;
+}
+
+.heroCopy{
+  max-width:600px;
+}
+
+.hero p{
+  max-width:500px;
+  line-height:1.65;
+  color:rgba(255,255,255,.9);
+}
+
+/* Buttons */
+.button{
+  border-radius:2px;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  transition:
+    transform .2s ease,
+    background-color .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+.button:hover{
+  transform:translateY(-2px);
+  background:#8f451e;
+  border-color:#8f451e;
+}
+
+.button.outline:hover{
+  background:white;
+  color:var(--ink);
+  border-color:white;
+}
+
+/* Section headings */
+.kicker{
+  margin-bottom:8px;
+  font-weight:700;
+}
+
+.story h2,
+.menu h2,
+.shop h2,
+.visit h2,
+.contact h2{
+  line-height:1.02;
+  letter-spacing:-.02em;
+}
+
+/* Story section */
+.story{
+  grid-template-columns:1.15fr 1fr 1fr;
+}
+
+.story>div{
+  padding:56px;
+}
+
+.story>img{
+  min-height:420px;
+}
+
+/* Values */
+.values{
+  align-self:stretch;
+  align-content:center;
+  padding:42px 30px;
+  border-left:1px solid var(--border);
+}
+
+.values div{
+  font-size:30px;
+}
+
+.values small{
+  margin-top:10px;
+  line-height:1.45;
+}
+
+/* Menu */
+.menu{
+  padding:84px 6vw;
+}
+
+.menu>p:not(.kicker){
+  margin-top:0;
+}
+
+.cards{
+  gap:24px;
+  margin-top:34px;
+}
+
+.cards article{
+  padding-bottom:18px;
+  border-bottom:1px solid var(--border);
+  transition:transform .2s ease;
+}
+
+.cards article:hover{
+  transform:translateY(-4px);
+}
+
+.cards img{
+  height:220px;
+  border-radius:3px;
+  transition:transform .3s ease;
+}
+
+.cards article:hover img{
+  transform:scale(1.015);
+}
+
+.cards b{
+  margin-top:14px;
+  font-size:15px;
+}
+
+.cards small{
+  min-height:44px;
+  color:rgba(23,26,21,.7);
+}
+
+.cards strong{
+  font-size:14px;
+}
+
+/* Shop section */
+.shop{
+  grid-template-columns:1fr 1.1fr 1fr;
+}
+
+.shop>div{
+  padding:72px 56px;
+}
+
+.shop>img{
+  min-height:460px;
+}
+
+.shop blockquote{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:72px 54px;
+  font-size:28px;
+}
+
+/* Visit */
+.visit{
+  grid-template-columns:1.15fr .9fr .65fr;
+}
+
+.visit>img{
+  min-height:400px;
+}
+
+.visit>div{
+  padding:56px 48px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.visit aside{
+  line-height:1.45;
+  min-height:100%;
+}
+
+/* Newsletter */
+.contact{
+  padding:88px 20px;
+}
+
+.contact form{
+  margin-top:28px;
+}
+
+.contact input{
+  min-height:48px;
+  padding:14px 16px;
+  font-size:14px;
+}
+
+.contact small{
+  display:block;
+  margin-top:18px;
+  opacity:.65;
+}
+
+/* Footer */
+footer{
+  padding:34px 6vw;
+  align-items:center;
+  border-top:1px solid rgba(255,255,255,.12);
+}
+
+footer span{
+  opacity:.78;
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible{
+  outline:2px solid var(--rust);
+  outline-offset:3px;
+}
+
+/* Mobile polish */
+@media(max-width:760px){
+  header{
+    min-height:64px;
+    padding:0 16px;
+  }
+
+  .logo b{
+    font-size:10px;
+  }
+
+  .logo>span{
+    font-size:22px;
+  }
+
+  .hero{
+    height:500px;
+    min-height:500px;
+    padding:28px 18px;
+  }
+
+  .hero h1{
+    font-size:44px;
+    max-width:320px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .story>div{
+    padding:38px 20px;
+  }
+
+  .story>img{
+    height:280px;
+  }
+
+  .values{
+    border-left:0;
+    border-top:1px solid var(--border);
+    padding:30px 20px 40px!important;
+  }
+
+  .menu{
+    padding:52px 18px;
+  }
+
+  .cards{
+    gap:28px 14px;
+  }
+
+  .cards article{
+    padding-bottom:14px;
+  }
+
+  .cards img{
+    height:155px;
+    border-radius:2px;
+  }
+
+  .cards b{
+    font-size:12px;
+  }
+
+  .cards small,
+  .cards strong{
+    font-size:10px;
+  }
+
+  .shop>div{
+    padding:46px 22px;
+  }
+
+  .shop>img{
+    height:320px;
+  }
+
+  .shop blockquote{
+    padding:48px 24px;
+    font-size:22px;
+  }
+
+  .visit>img{
+    height:290px;
+  }
+
+  .visit>div{
+    padding:42px 22px;
+  }
+
+  .visit aside{
+    min-height:170px;
+    font-size:22px;
+  }
+
+  .contact{
+    padding:64px 18px;
+  }
+
+  footer{
+    gap:8px;
+    padding:28px 18px;
+  }
+}
+
